@@ -1,0 +1,15 @@
+The Tika app jar needs to be converted to an OSGi bundle so lucee can load it on the fly and in isolation.
+
+1. make a copy of downloaded app jar called "tika-app-VERSION.bundle.jar"
+2. open copy with 7-zip
+3. select META-INF/MANIFEST.MF and press F4 to open
+4. add the following to the end, replacing [VERSION] with actual version number:
+
+Bundle-Name: Apache Tika App Bundle
+Bundle-SymbolicName: apache-tika-app-bundle
+Bundle-Description: Apache Tika App jar converted to an OSGi bundle
+Bundle-ManifestVersion: 2
+Bundle-Version: [VERSION]
+Bundle-ClassPath: .,tika-app-[VERSION].bundle.jar
+
+5. Save choosing to update when prompted.
