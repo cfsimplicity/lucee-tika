@@ -1,8 +1,8 @@
 component accessors="true"{
 
 	static {
-		version = "1.0.0";
-		tikaVersion = "2.4.0";
+		version = "1.0.1";
+		tikaVersion = "2.4.1";
 		bundleSymbolicName = "apache-tika-app-bundle";
 		bundlePath = GetDirectoryFromPath( GetCurrentTemplatePath() ) & "tika-app-#static.tikaVersion#.bundle.jar";
 	}
