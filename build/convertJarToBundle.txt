@@ -13,3 +13,5 @@ Bundle-Version: [VERSION]
 Bundle-ClassPath: .,tika-app-[VERSION].bundle.jar
 
 5. Save choosing to update when prompted.
+
+NB: Automating via a CommandBox task runner is too processing intensive due to the size of the jar file
